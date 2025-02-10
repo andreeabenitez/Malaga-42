@@ -1,0 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: andbenit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/03 20:13:30 by andbenit          #+#    #+#             */
+/*   Updated: 2025/02/03 20:18:40 by andbenit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+int main()
+{
+	ft_putchar('H');
+	ft_putchar('o');
+	ft_putchar('l');
+	ft_putchar('a');
+	ft_putchar('\n');  // Salto de línea
+	return 0;
+}
