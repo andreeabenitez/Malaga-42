@@ -24,5 +24,5 @@ int main()
 	ft_putchar('l');
 	ft_putchar('a');
 	ft_putchar('\n');  // Salto de línea
-	return 0;
+	return (0);
 }
