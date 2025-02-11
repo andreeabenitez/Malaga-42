@@ -31,5 +31,5 @@ int     main()
         printf("Before: %d\n", n);
         ft_ultimate_ft(&ptr8);
         printf("After: %d\n", n);
-        return 0;
+        return (0);
 }
