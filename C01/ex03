@@ -28,5 +28,5 @@ int main (void)
         ft_div_mod (a, b, &div_result, &mod_result);
         printf("Division: %d / %d = %d\n", a, b, div_result);
         printf("Modulus: %d %% %d = %d\n", a, b, mod_result);
-        return 0;
+        return (0);
 }
