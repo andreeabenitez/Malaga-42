@@ -1,0 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: andbenit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/09 15:05:52 by andbenit          #+#    #+#             */
+/*   Updated: 2025/02/09 15:07:56 by andbenit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+int	ft_str_is_numeric(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] <= '9' && str[i] >= '0')
+		i++;
+	if (str[i] == '\0')
+		return (1);
+	else
+		return (0);
+}
+
+int main()
+{
+    char *test1 = "12345";
+    char *test2 = "123a45";
+    printf("Test 1: %s -> %d\n", test1, ft_str_is_numeric(test1));
+    printf("Test 2: %s -> %d\n", test2, ft_str_is_numeric(test2));
+    return (0);
+}
