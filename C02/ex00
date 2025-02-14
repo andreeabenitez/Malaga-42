@@ -9,6 +9,8 @@
 /*   Updated: 2025/02/08 19:46:24 by andbenit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
+#include <unistd.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {
