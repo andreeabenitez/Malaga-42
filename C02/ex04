@@ -1,0 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: andbenit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/09 16:55:27 by andbenit          #+#    #+#             */
+/*   Updated: 2025/02/09 17:00:44 by andbenit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include <stdio.h>
+#include <unistd.h>
+
+int	ft_str_is_lowercase(char *str)
+{
+	int	i;
+
+	i = 0;
+	if (str[i] == '\0')
+		return (1);
+	else
+	{
+		while (str[i] >= 'a' && str[i] <= 'z')
+			i++;
+		if (str[i] == '\0')
+			return (1);
+		else
+			return (0);
+	}
+}
+
+int main()
+{
+    char *test1 = "hello";
+    char *test2 = "Hello";
+    printf("Test 1: %s -> %d\n", test1, ft_str_is_lowercase(test1));
+    printf("Test 2: %s -> %d\n", test2, ft_str_is_lowercase(test2));
+    return (0);
+}
