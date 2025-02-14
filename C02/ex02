@@ -27,9 +27,9 @@ int	ft_str_is_alpha(char *str)
 
 int main()
 {
-char *test1 = "Hello";   
-char *test2 = "Hello123";     
-printf("Test 1: %s -> %d\n", test1, ft_str_is_alpha(test1));
-printf("Test 2: %s -> %d\n", test2, ft_str_is_alpha(test2));
-return (0);
+	char *test1 = "Hello";   
+	char *test2 = "Hello123";     
+	printf("Test 1: %s -> %d\n", test1, ft_str_is_alpha(test1));
+	printf("Test 2: %s -> %d\n", test2, ft_str_is_alpha(test2));
+	return (0);
 }
