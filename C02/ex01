@@ -36,5 +36,5 @@ int main()
     const char *src = "Hello, World!";
     ft_strncpy(dest, src, 5);
     printf("Copied (5 chars): %s\n", dest);
-    return 0;
+    return (0);
 }
