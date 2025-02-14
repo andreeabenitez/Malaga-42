@@ -1,0 +1,39 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: andbenit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/09 18:34:33 by andbenit          #+#    #+#             */
+/*   Updated: 2025/02/09 18:35:09 by andbenit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include <stdio.h>
+#include <unistd.h>
+
+char	*ft_strlowcase(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+			str[i] = str[i] + 32;
+		}
+		i++;
+	}
+	return (str);
+}
+
+int main()
+{
+    
+    char test1[] = "HELLO";
+    char test2[] = "HeLLo WoRlD";
+    printf("Test 1: %s -> %s\n", test1, ft_strlowcase(test1));
+    printf("Test 2: %s -> %s\n", test2, ft_strlowcase(test2));
+    return (0);
+}
