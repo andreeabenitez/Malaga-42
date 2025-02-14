@@ -34,6 +34,5 @@ int main()
     char test2[] = "HeLLo WoRlD";
     printf("Test 1: %s -> %s\n", test1, ft_strupcase(test1));
     printf("Test 2: %s -> %s\n", test2, ft_strupcase(test2));
-
     return (0);
 }
