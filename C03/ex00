@@ -1,0 +1,46 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: andbenit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/10 12:14:13 by andbenit          #+#    #+#             */
+/*   Updated: 2025/02/16 17:25:04 by andbenit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include <stdio.h>
+#include <unistd.h>
+
+int     ft_strcmp(char *s1, char *s2)
+{
+        int     i;
+
+        i = 0;
+        while ((s1[i] == s2[i]) && (s1[i] != '\0' && s2[i] != '\0'))
+                i++;
+        return (s1[i] - s2[i]);
+}
+
+int main()
+{
+    char str1[] = "Hola";
+    char str2[] = "Hola";
+    char str3[] = "Mundo";
+
+    int result;
+
+    result = ft_strcmp(str1, str2);
+    if (result == 0)
+        printf("Las cadenas '%s' y '%s' son iguales.\n", str1, str2);
+    else
+        printf("Las cadenas '%s' y '%s' son diferentes. Resultado: %d\n", str1, str2, result);
+
+    result = ft_strcmp(str1, str3);
+    if (result == 0)
+        printf("Las cadenas '%s' y '%s' son iguales.\n", str1, str3);
+    else
+        printf("Las cadenas '%s' y '%s' son diferentes. Resultado: %d\n", str1, str3, result);
+
+    return (0);
+}
