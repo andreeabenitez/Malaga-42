@@ -9,7 +9,7 @@
 /*   Updated: 2025/02/16 18:54:17 by andbenit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stdio.h>
 #include <unistd.h>
 
 unsigned int    ft_strlcat(char *dest, char *src, unsigned int size)
@@ -32,6 +32,7 @@ unsigned int    ft_strlcat(char *dest, char *src, unsigned int size)
         dest[dest_len + i] = '\0';
         return (dest_len + src_len);
 }
+
 int main()
 {
     char dest[20] = "Hola ";
